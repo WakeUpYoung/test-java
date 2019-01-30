@@ -10,10 +10,15 @@ public class TestCountDownLatch {
     public static void main(String[] args) {
         final CountDownLatch latch = new CountDownLatch(2);
 
-        new Thread(new FirstThread(latch)).start();
+        Thread thread = new Thread(new FirstThread(latch));
 
-        new Thread(new SecondThread(latch)).start();
+        Thread thread1 = new Thread(new SecondThread(latch));
 
+        thread.setName("线程1");
+        thread1.setName("线程2");
+
+        thread.start();
+        thread1.start();
         try {
             System.out.println("等待两个线程执行条件结束");
             latch.await();

@@ -11,9 +11,9 @@ public class FirstThread implements Runnable {
     public void run() {
         System.out.println(Thread.currentThread().getName() + "正在运行");
         try {
-            Thread.sleep(2000);
-            latch.countDown();
+            Thread.sleep(3000);
             System.out.println(Thread.currentThread().getName() + "运行结束");
+            latch.countDown();
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
