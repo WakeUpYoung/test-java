@@ -1,10 +1,3 @@
-/**
- * Classname :Person
- * <p>
- * Description :
- * <p>
- * Author : Wang Yu
- **/
 package com.wy.test.lambda;
 
 import com.alibaba.fastjson.JSON;

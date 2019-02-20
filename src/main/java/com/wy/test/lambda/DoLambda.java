@@ -1,10 +1,3 @@
-/**
- * Classname :DoLambda
- * <p>
- * Description :
- * <p>
- * Author : Wang Yu
- **/
 package com.wy.test.lambda;
 
 public class DoLambda {

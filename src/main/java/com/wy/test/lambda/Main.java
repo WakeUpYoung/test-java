@@ -1,10 +1,3 @@
-/**
- * Classname :Main
- * <p>
- * Description :
- * <p>
- * Author : Wang Yu
- **/
 package com.wy.test.lambda;
 
 import java.util.ArrayList;
