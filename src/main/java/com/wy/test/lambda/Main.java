@@ -1,13 +1,20 @@
 package com.wy.test.lambda;
 
 import java.util.ArrayList;
-import java.util.Comparator;
 import java.util.List;
-import java.util.Scanner;
 
 public class Main {
+    // 使用lambda 就是让方法的参数是一个@FunctionInterface接口
     public static void main(String[] args) {
-        testStream();
+//        testStream();
+        DoLambda lambda = new DoLambda(10, 5);
+//        int add = lambda.compute((x, y) -> x - y);
+        lambda.testFunction(new Person("Wang", 6000.0, 20), person -> {
+            person.setAge(person.getAge() + 1);
+            System.out.println(person);
+            return person;
+        });
+
     }
 
     public static void testStream(){
